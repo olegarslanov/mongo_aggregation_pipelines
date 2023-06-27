@@ -1,0 +1,17 @@
+Projektas SANDELIS
+Prekiu atsargoms stebeti
+
+Uzduotis:
+1.	Sukurti nauja repozitorija Githube
+2.	Instaliuoti virtualia aplinka, bei butinas bibliotekas
+3.	Sukurti 100 poziciju duomenu baze su tokiais laukais: 
+    a)	pavadinimas
+    b)	kiekis
+    c)	kaina
+    d)	gamintojas
+    e)	gamintojo salis
+4.	Parasyti automatizuotu uzklausu filtravimo programele. Filtruoti pagal kieki (nuo 0 iki 10) ir pagal kaina (nuo 10 iki 100)
+5.	Parasyti automatizuotu uzklausu sortiravimo programele. Sortiruoti pagal kieki didejancia tvarka
+6.	Parasyti automatizuotu uzklausu projektavimo programele. Parodyti tik pavadinimo ir kiekio laukus
+7.	Parasyti kombinuota automatizuotu uzklausu programele. Panaudoti visus anksciau isvardintus metodus
+
