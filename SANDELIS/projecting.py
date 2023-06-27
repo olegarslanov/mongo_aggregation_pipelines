@@ -2,11 +2,14 @@
 
 # C. Projecting Documents (galima filtruoti be tam tikru dokumentu lauku)
 
+
+# cia uzdarom pylint, jis neduoda dirbti normaliai pymongo
+# pylint: disable = all
+from typing import Dict, Any
 from pymongo import MongoClient
 from pymongo.collection import Collection
 from pymongo.database import Database
 from pymongo.cursor import Cursor
-from typing import Dict, Any
 
 
 def project_documents(
@@ -18,14 +21,14 @@ def project_documents(
 
 # Establish a connection to the MongoDB server
 client: MongoClient = MongoClient("mongodb://localhost:27017")
-db: Database = client["task_manager"]  # Type: Database
-collection: Collection = db["tasks"]  # Type: Collection
+db: Database = client["Aggregation_Pipelines"]  # Type: Database
+collection: Collection = db["SANDELIS"]  # Type: Collection
 
 # Define the projection fields
 projection: Dict[str, int] = {
-    # "name": 1,  # Include the 'name' field in the projection (1 indicates inclusion)
-    # "price": 1,  # Include this field in the projection
-    "food.quantity": 1,
+    "pavadinimas": 1,  # Include the 'name' field in the projection (1 indicates inclusion)
+    "kiekis": 1,  # Include this field in the projection
+    # "parduotuve.kiekis": 1,
     # "_id": 0,  # Exclude this field from the projection (0 indicates exclusion)
 }
 
